@@ -1,7 +1,7 @@
 /* eslint-env node */
 
 module.exports = function(environment) {
-  var ENV = {
+  let ENV = {
     modulePrefix: 'super-rentals',
     environment: environment,
     rootURL: '/',
@@ -15,6 +15,13 @@ module.exports = function(environment) {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
       }
+    },
+
+    firebase: {
+      apiKey: 'AIzaSyCzV75uEscdiC-MV5EMoqDReEY34_EXknc',
+      authDomain: 'ember-rental-d2c86.firebaseapp.com',
+      databaseURL: 'https://ember-rental-d2c86.firebaseio.com',
+      storageBucket: ''
     },
 
     APP: {
